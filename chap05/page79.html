@@ -1,0 +1,31 @@
+<h1>Prisca</h1>
+<hr>
+<p id="about me"><em>this is my first html page</em></p>
+<hr>
+<h2>Things I do</h2>
+<P>Here are things that I do everyday</P>
+<ul>
+    <li id="firstThing">Pray</li>
+    <li id="secondThing">Sing</li>
+    <li id="thirdThing">eat lots of fruits</li>
+</ul>
+<button id="changeList" type="button">change my list</button>
+<script>
+  var item1;
+  var item2;
+  var item3
+  document.getElementById("changeList").onclick=newList;
+  function newList () {
+      item1=prompt ("Enter a new first thing");
+      item2=prompt ("Enter a new second thing");
+      item3=prompt ("Enter a new third thing");
+      updateList();
+  }
+      function updateList(){
+      document.getElementById("firstThing"). innerHTML=item1;
+      document.getElementById("secondThing"). innerHTML=item2;
+      document.getElementById("thirdThing"). innerHTML=item3;
+  }  
+</script>
+
+
